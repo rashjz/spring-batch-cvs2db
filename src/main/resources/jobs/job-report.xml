@@ -12,6 +12,8 @@
 
     <import resource="../config/context.xml"/>
     <import resource="../config/database.xml"/>
+    <!--org.springframework.beans.factory.BeanCreationException: Could not autowire field:-->
+    <bean class="org.springframework.batch.test.JobLauncherTestUtils"/>
 
     <bean id="report" class="rashjz.info.model.Report" scope="prototype"/>
     <bean id="itemProcessor" class="rashjz.info.job.ReportItemProcessor"/>
